@@ -14,7 +14,7 @@ const app = express();
 app.set('trust proxy', 1);
 
 const corsOptions: cors.CorsOptions = {
-  origin: 'http://localhost:5173',
+  origin: ['http://localhost:5173','https://expense-tracker-mern-frontend-black.vercel.app'],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
